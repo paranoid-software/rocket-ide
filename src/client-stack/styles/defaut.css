@@ -23,7 +23,7 @@ body .c-ide .c-connections-explorer .c-connection-picker {
 body .c-ide .c-connections-explorer .c-connection-picker .webui-popover--connection-picker {
   width: 310px;
 }
-body .c-ide .c-connections-explorer .c-connections-list {
+body .c-ide .c-connections-explorer .c-applications-explorer {
   overflow: auto;
 }
 body .c-ide .c-data-explorer {

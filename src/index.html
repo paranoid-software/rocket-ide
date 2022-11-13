@@ -26,12 +26,24 @@
                     <input class="input" aria-label="Connection name" autocomplete="off"
                            data-child-outlet-id="connectionNameInput"
                            placeholder="Find or create a connection">
+                    <div class="c-create-connection-button-wrapper">
+                        <button class="button is-small" data-outlet-id="createConnectionButton">Create connection: </button>
+                    </div>
+                    <div class="c-connections-list-wrapper">
+                        <ul data-outlet-id="connectionsList">
+                            <li>default</li>
+                            <li>binko</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="c-connections-list is-flex-grow-1"></div>
+        <div class="c-applications-explorer is-flex-grow-1">
+            <span>Select a connection</span>
+        </div>
     </div>
     <div class="c-data-explorer column">
+        <span>Select an application or collection</span>
     </div>
 </div>
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>

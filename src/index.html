@@ -12,33 +12,26 @@
     <link rel="stylesheet" href="../node_modules/webui-popover/dist/jquery.webui-popover.min.css">
 </head>
 <body>
-<div class="columns is-mobile is-gapless">
-    <div class="column is-narrow has-background-grey">
-        <div class="x">
-        <div data-controller-name="ConnectionPickerPlugster">
-            <button data-outlet-id="connectionPickerButton" class="button">
-                <span class="icon is-small">
-                    <i class="fas fa-plug"></i>
-                </span>
-                <span class="placeholder">Connect to...</span>
-            </button>
-            <div class="webui-popover-content">
-                <input class="input" aria-label="Name" autocomplete="off" data-child-outlet-id="nameInput" placeholder="Find or create a connection">
+<div class="c-ide columns is-mobile is-gapless">
+    <div class="c-connections-explorer column is-flex is-flex-direction-column is-narrow">
+        <div class="c-connection-picker">
+            <div class="c-connection-picker__plugster" data-controller-name="ConnectionPickerPlugster">
+                <button data-outlet-id="connectToButton" class="button is-fullwidth">
+                    <span class="icon is-small">
+                        <i class="fas fa-plug"></i>
+                    </span>
+                    <span class="is-flex is-flex-grow-1">Connect to...</span>
+                </button>
+                <div class="c-connect-to-popover webui-popover-content">
+                    <input class="input" aria-label="Connection name" autocomplete="off"
+                           data-child-outlet-id="connectionNameInput"
+                           placeholder="Find or create a connection">
+                </div>
             </div>
         </div>
-            </div>
+        <div class="c-connections-list is-flex-grow-1"></div>
     </div>
-    <div class="column has-background-grey-darker">
-        <p>hi</p>
-        <p>hi</p>
-        <p>hi</p>
-        <p>hi</p><p>hi</p><p>hi</p><p>hi</p><p>hi</p>
-
-        <p>hi</p><p>hi</p>
-
-
-
-
+    <div class="c-data-explorer column">
     </div>
 </div>
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>

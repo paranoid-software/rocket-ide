@@ -15,14 +15,15 @@ class ConnectionPickerPlugster extends Plugster {
           self._.theTimeLabel.text(response.theTime);
         });*/
 
-        self._.connectionPickerButton.webuiPopover({
+        self._.connectToButton.webuiPopover({
             title: 'Switch / create connection',
+            container: self._.root,
             closeable: true,
             animation: 'fade',
             placement: 'bottom-right',
             arrow: false,
             offsetTop: 10,
-            style: 'connection-picker'
+            style: '-connection-picker'
         });
 
         window.api.suscribe('test', function (a) {
@@ -34,7 +35,7 @@ class ConnectionPickerPlugster extends Plugster {
 }
 
 let connectionPickerPlugster = await new ConnectionPickerPlugster({
-    connectionPickerButton: {}
+    connectToButton: {}
 }).init();
 
 Plugster.plug(connectionPickerPlugster);

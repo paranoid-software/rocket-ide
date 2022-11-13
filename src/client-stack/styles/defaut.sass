@@ -4,31 +4,26 @@ body
 
 body
   position: fixed
-  width: 100%
   top: 0
   left: 0
   bottom: 0
-  background: #2b74b1
+  right: 0
 
-  .column
-    height: 100vh
+  .c-ide
+    height: 100%
 
-    .x
-      padding: 10px
+    .c-connections-explorer
+      box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1)
 
-      [data-role="connection-picker-plugster"]
+      .c-connection-picker
         width: 300px
+        padding: 10px
 
-        button
-          width: 100%
-          display: flex
+        .webui-popover--connection-picker
+          width: 310px
 
-          .placeholder
-            flex-grow: 1
-            text-align: left
+      .c-connections-list
+        overflow: auto
 
-  .column:nth-child(2)
-    overflow-y: auto
-
-.webui-popover-connection-picker
-  width: 350px
+    .c-data-explorer
+      overflow: scroll

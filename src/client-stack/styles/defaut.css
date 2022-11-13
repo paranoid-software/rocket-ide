@@ -5,35 +5,29 @@ body {
 
 body {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
   bottom: 0;
-  background: #2b74b1;
+  right: 0;
 }
-body .column {
-  height: 100vh;
+body .c-ide {
+  height: 100%;
 }
-body .column .x {
+body .c-ide .c-connections-explorer {
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+}
+body .c-ide .c-connections-explorer .c-connection-picker {
+  width: 300px;
   padding: 10px;
 }
-body .column .x [data-role=connection-picker-plugster] {
-  width: 300px;
+body .c-ide .c-connections-explorer .c-connection-picker .webui-popover--connection-picker {
+  width: 310px;
 }
-body .column .x [data-role=connection-picker-plugster] button {
-  width: 100%;
-  display: flex;
+body .c-ide .c-connections-explorer .c-connections-list {
+  overflow: auto;
 }
-body .column .x [data-role=connection-picker-plugster] button .placeholder {
-  flex-grow: 1;
-  text-align: left;
-}
-body .column:nth-child(2) {
-  overflow-y: auto;
-}
-
-.webui-popover-connection-picker {
-  width: 350px;
+body .c-ide .c-data-explorer {
+  overflow: scroll;
 }
 
 /*# sourceMappingURL=defaut.css.map */

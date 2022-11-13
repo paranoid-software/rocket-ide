@@ -1,0 +1,26 @@
+{
+  "name": "rocket-ide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paranoid-software/rocket-ide.git"
+  },
+  "author": "Paranoid Software",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/paranoid-software/rocket-ide/issues"
+  },
+  "homepage": "https://github.com/paranoid-software/rocket-ide#readme",
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "electron": "^21.2.3",
+    "electron-reload": "^2.0.0-alpha.1",
+    "jquery": "^3.6.1",
+    "webui-popover": "^1.2.18"
+  }
+}

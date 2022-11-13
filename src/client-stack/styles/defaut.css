@@ -1,0 +1,39 @@
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #2b74b1;
+}
+body .column {
+  height: 100vh;
+}
+body .column .x {
+  padding: 10px;
+}
+body .column .x [data-role=connection-picker-plugster] {
+  width: 300px;
+}
+body .column .x [data-role=connection-picker-plugster] button {
+  width: 100%;
+  display: flex;
+}
+body .column .x [data-role=connection-picker-plugster] button .placeholder {
+  flex-grow: 1;
+  text-align: left;
+}
+body .column:nth-child(2) {
+  overflow-y: auto;
+}
+
+.webui-popover-connection-picker {
+  width: 350px;
+}
+
+/*# sourceMappingURL=defaut.css.map */
